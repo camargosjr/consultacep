@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Consulta CEP </title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="resultado">
+        <div class="cidadeCep">
+          <label for="cidade">Cidade:</label>
+          <span class="cidade">-</span>
+          <label for="cep" id="labelcep">CEP:</label>
+          <span class="cep">-</span>
+        </div>
+        <div class="bairroUf">
+          <label for="bairro">Bairro:</label>
+          <span class="bairro">-</span>
+          <label for="uf" id="labeluf">UF:</label>
+          <span class="uf">-</span>
+        </div>
+        <div class="end">
+          <label for="endereco">Endereço:</label>
+          <span class="endereco">-</span>
+        </div>
+
+      </div>
+      <div class="formulario">
+
+        <form name="pesquisaCEP" action="#" method="get">
+          <p>Busca CEP</p>
+          <input type="text" name="cep"  placeholder="Insira um CEP" required autocomplete="off" />
+          <span class="error"></span>
+          <button>Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

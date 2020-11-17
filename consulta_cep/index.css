@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+   /* outline: 0;*/
+    box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+/*
+body {
+  background-color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+    width: 40%;
+    height: 40%;
+    margin: 0 auto;
+    border: 1px solid #DCDCDC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+input, button{
+    width: 100%;
+    height: 2.2rem;
+    margin: 0.4rem;
+    font: 1rem Archivo ; 
+}
+
+button{
+    background-color: #1E90FF;
+    border: 0;
+    border-radius: 4px;
+    color: #FFFFFF;  
+    cursor: pointer;
+}
+button:hover {
+    background-color: #4682B4;
+}
+input{
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    height: 40px; 
+    text-align: center;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+/*Deixa placeholder transparent ao entrar no campo*/
+body{
+    font-family: 'Roboto', sans-serif;  
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    min-width: 235px;
+    border: 1px solid;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultado {
+    width: 40%;
+    height: 18%;
+    min-width: 235px;
+    background: #BEBEBE;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding: 2px 10px;
+    border: 1px solid #E8E8E8;
+    
+}
+label, span{
+  margin-left: 2px;
+}
+
+
+.cidadeCep{
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.bairroUf {
+    width: 100%;
+    margin-bottom: 5px;  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.end {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+.formulario {
+    width: 40%;
+    height: 30%;
+    min-width: 235px;
+    border: 1px solid #DCDCDC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.error {
+    color: crimson;
+}
+
+input,button {
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+   
+}
+
+input {
+    
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    height: 40px; 
+    text-align: center;
+}
+
+button{
+    background-color:#1E90dd;
+    border: 0;
+    border-radius: 4px;
+    color: #FFFFFF;  
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.4s;
+}
+button:hover {
+   /* background-color: #3CB371;*/
+   opacity: 1;
+}
+::placeholder{
+    color: #d1d1d1;
+}
+input:required:not(:placeholder-shown):invalid  {
+    border: 2px solid #c9001b;
+}
+
+.error {
+    position: absolute;
+    font-size: 12px;
+    top: 430px;
+}
+.errorinput {
+    border: 1px solid #FF0000;
+}
